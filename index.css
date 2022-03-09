@@ -1,0 +1,91 @@
+@import(https://fonts.google.com/specimen/Manrope);
+
+body{
+  text-align :center;
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope',sans-serif;
+  font-weight : 800;
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+ }
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+ }
+
+ .advice-card{
+   background-color:hsl(217, 19%, 24%);
+   border-radius:15px;
+   height : 30vh;
+   width : 40vw;
+   padding :1.5em;
+   position :absolute;
+ }
+
+.main{
+  width :100vw;
+  height :90vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content:center;
+}
+
+.header{
+  color :hsl(150, 100%, 66%);
+}
+
+.advice-text{
+  color :hsl(193, 38%, 86%);
+  font-size: 28px;
+  max-width: 80vw;
+  max-height : 80vh;
+  position : absolute;
+  padding : 20px;
+  text-align : center;
+}
+
+.btn{
+  border-style: none;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color : hsl(150, 100%, 66%);
+}
+
+.divider{
+  padding: 4em;
+  width : 70%;
+  margin-top : 50px;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 20px 6px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width : 375px){
+ .advice-card{
+   display :flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   width : 70vw;
+   padding : 2em;
+ }
+ .advice-text{
+   font-size : 18px
+ }
+ .header {
+   padding : -20px;
+ }
+ .divider{
+   padding: 1em;
+    width: 70%;
+    margin-top: 80px;
+ }
+}
